@@ -1,374 +1,318 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Houlonglon.GitHub.com by houlonglong</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-   header>
-	<div id="logo">
-		<div id="header_img"><img src="image/logo.jpg" alt="" /></div>
-		<div id="header_p">
-			<p id="header_p1">F2E</p>
-			<p id="header_p2">个人简历</p>
-		</div>
-	</div>
-	<nav>
-		<ul>
-			<li><a href="">首页</a></li>
-			<li><a href="">随笔</a></li>
-			<li><a href="">积淀</a></li>
-			<li><a href="">关于</a></li>
-		</ul>
-	</nav>
-</header>
-<!-- header navigation end -->
-<!-- aside navigation -->
-<aside>
-		<a href="#page1"><b>首页</b></a>
-		<a href="#page2"><b>关于我</b></a>
-		<a href="#page3"><b>专业技能</b></a>
-		<a href="#page4"><b>我的经历</b></a>
-		<a href="#page5"><b>我的作品</b></a>
-		<a href="#page6"><b>联系我</b></a>
-</aside>
-<!-- aside navigation end -->
-<!-- home page -->
-<div id="dowebok">
-	<!-- home -->
-	<div class="section one">
-		<div id="home">
-			<div id="home_content">
-				<div id="home_head">
-					<div id="home_head_content">
-						<img src="image/photo1.jpg" id="home_photo1" alt="" />
-						<img src="image/photo2.jpg" id="home_photo2" alt="" />
-					</div>
-				</div>
-				<div id="home_info">
-					<p id="home_info1">生活是一种绵延不绝的渴望,渴望不断上升,变得更伟大而高贵。</p>
-					<div id="home_info_box">
-						<p id="home_info2">赵柯宇</p>
-						<p id="home_info3">24岁</p>
-						<p id="home_info4">前端研发工程师</p>
-						<p id="home_info5">zhaoky2016@163.com</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- home end -->
-	<!-- about -->
-	<div class="section two">
-		<div id="about">
-			<div id="about_content">
-				<div class="title">
-					<h1>关于我</h1>
-				</div>
-				<div id="about_list_content">
-					<div class="about_list" id="about_list1">
-						<div class="about_list_eg" id="about_en_edu">education</div>
-						<div class="about_list_cn" id="about_cn_edu">学历<p>本科</p></div>
-					</div>
-                    <div class="about_list">
-                        <div class="about_list_eg" id="about_en_age">age</div>
-                        <div class="about_list_cn" id="about_cn_age">年龄<p>24岁</p></div>
-                    </div>
-                    <div class="about_list">
-                        <div class="about_list_eg" id="about_en_loc">location</div>
-                        <div class="about_list_cn" id="about_cn_loc">坐标<p>成都</p></div>
-                    </div>
-                    <div class="about_list">
-                        <div class="about_list_eg" id="about_en_sta">status</div>
-                        <div class="about_list_cn" id="about_cn_sta">状态<p>在职</p></div>
-                    </div>
-				</div>
-				<div id="about_info"></div>
-			</div>
-		</div>
-	</div>
-    <!-- about end -->
-    <!-- skill -->
-    <div class="section three">
-		<div id="skill">
-			<div id="skill_content">
-				<div class="title">
-					<h1>专业技能</h1>
-				</div>
-				<div id="skill_info"></div>
-                <div id="skill_list">
-                    <div class="skill_list_content" id="skill_list1">
-                        <div class="skill_icon" id="skill_icon1"></div>
-                        <div class="skill_name">SEO</div>
-                        <div class="skill_flag"></div>
-                        <div class="skill_int" id="skill_int1"></div>
-                    </div>
-                    <div class="skill_list_content" id="skill_list2">
-                        <div class="skill_icon" id="skill_icon2"></div>
-                        <div class="skill_name">HTML</div>
-                        <div class="skill_flag"></div>
-                        <div class="skill_int" id="skill_int2"></div>
-                    </div>
-                    <div class="skill_list_content" id="skill_list3">
-                        <div class="skill_icon" id="skill_icon3"></div>
-                        <div class="skill_name">CSS</div>
-                        <div class="skill_flag"></div>
-                        <div class="skill_int" id="skill_int3"></div>
-                    </div>
-                    <div class="skill_list_content" id="skill_list4">
-                        <div class="skill_icon" id="skill_icon4"></div>
-                        <div class="skill_name">JavaScript</div>
-                        <div class="skill_flag"></div>
-                        <div class="skill_int" id="skill_int4"></div>
-                    </div>
-                </div>
-            </div>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+    <title>bootstrap项目实战</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-maizi.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+</head>
+<body>
+<!--导航-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!--小屏幕导航按钮和logo-->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand">麦子学院</a>
         </div>
-    </div>
-    <!-- skill end -->
-    <!-- experience -->
-    <div class="section four">
-    	<div id="exp">
-        	<div id="exp_content">
-        		<div class="title">
-                	<h1>我的经历</h1>
-                </div>
-                <div id="exp_info" class="exp_scale"></div>
-                <div id="exp_list_slider">
-                	<div id="exp_list_slider_content" class="exp_scale">
-                        <div id="exp_list_content">
-                            <div class="exp_list">
-                                <div class="exp_list_left">
-                               		<div id="exp_list_left1">
-                                        <dl>
-                                            <dt>壹零陆文化传播有限责任公司</dt>
-                                            <dd class="exp_list_time">2014年3月~2014年9月</dd>
-                                            <dd>网络部（实习）</dd>
-                                            <dd>负责网站后台维护，微博、微信等新媒体创意撰写，营销和推广</dd>
-                                            <dd>负责百度PPC后台调整</dd>
-                                            <dd>获得<a href="#" class="md-trigger" data-modal="modal-1">最佳新人奖</a></dd>
-                                            <dd>开始了解到web前端这门技术，产生极大的兴趣</dd>
-                                        </dl>
-                                    </div>
-                                </div>
-                        	</div>
-                        	<div class="exp_list">
-                                <div class="exp_list_left">
-                                	<div id="exp_list_left2">
-                                        <dl>
-                                            <dt>四川卓煌企业管理有限公司</dt>
-                                            <dd class="exp_list_time">2014年9月~2015年8月</dd>
-                                            <dd>管理部</dd>
-                                            <dd>负责网站后台维护及网站内容结构优化更改</dd>
-                                            <dd>负责百度竞价操作及seo优化</dd>
-                                            <dd>同期工作之余开始<a href="#" class="md-trigger" data-modal="modal-2">系统性的自学web前端各项技术</a></dd>
-                                        </dl>
-                                    </div>
-                            	</div>
-                        	</div>
-                            <div class="exp_list">
-                                <div class="exp_list_left">
-                                    <div id="exp_list_left3">
-                                        <dl>
-                                            <dt>成都兰途网络科技有限公司</dt>
-                                            <dd class="exp_list_time">2015年8月~现在</dd>
-                                            <dd>前端技术部</dd>
-                                            <dd>使用Phonegap/Cordova快速构建高质量移动app页面</dd>
-                                            <dd>移动校园管理系统的前端构建</dd>
-					    <dd>微信企业号、服务号前端构建</dd>
-                                            <dd>同期工作之余猛补基础知识</dd>
-                                        </dl>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    <div id="exp_list_to">
-                    	<div id="exp_list_toleft"><img src="image/exp_list_toleft.png" /></div>
-                    	<div id="exp_list_toright"><img src="image/exp_list_toright.png" /></div>
-                    </div>
-                    </div>
-                    <div id="exp_timeline" class="exp_scale">
-                    	<div>
-                            <a href="#" title="2014年3月~2014年9月"></a>
-                            <a href="#" title="2014年9月~2015年8月"></a>
-                            <a href="#" title="2015年8月~现在"></a>
-                        </div>
-                    </div>             
-                </div>
-            </div>
-        </div>
-    </div> 
-    <!-- experience end -->
-    <!-- demo -->
-    <div class="section five">
-    	<div id="demo">
-        	<div id="demo_content">
-            	<div class="title">
-                	<h1>我的作品</h1>
-                </div>
-                <div id="demo_content_list">
-                    <ul class="demo_box">
-                    	<li class="demo_scale">
-                            <div class="demo_box_content">
-                            	<div class="demo_box_hover">
-                                    <p class="demo_box_title">DOM编程艺术DEMO</p>
-                                    <span class="demo_box_hover_icon">
-                                        <a href="demo/js原生demo/index.html" target="_blank" class="demo_box_link">
-                                            <img src="image/demo-link.png" alt="" />
-                                        </a>
-                                    </span>
-                                </div>
-                                <img src="image/demo_box1.jpg" alt="" class="demo_box_bg"/>
-                            </div>
-                        </li>
-                        <li class="demo_scale">
-                            <div class="demo_box_content">
-                                <div class="demo_box_hover">
-                                    <p class="demo_box_title">自学shop_home</p>
-									<span class="demo_box_hover_icon">
-										<a href="demo/shop_demo/shop_home.html" target="_blank" class="demo_box_link">
-											<img src="image/demo-link.png" alt="" />
-										</a>
-									</span>
-								</div>
-								<img src="image/demo_box2.jpg" alt="" class="demo_box_bg"/>
-							</div>
-                        </li>
-                        <li class="demo_scale">
-							<div class="demo_box_content">
-                            	<div class="demo_box_hover">
-									<p class="demo_box_title">自学shop_detail</p>
-                                    <span class="demo_box_hover_icon">
-                                    	<a href="demo/shop_demo/shop_detail.html" target="_blank" class="demo_box_link">
-											<img src="image/demo-link.png" alt="" />
-                                        </a>
-                                    </span>
-                                </div>
-								<img src="image/demo_box3.jpg" alt="" class="demo_box_bg"/>
-                            </div>
-                        </li>
-                        <li class="demo_scale">
-							<div class="demo_box_content">
-                            	<div class="demo_box_hover">
-                                	<p class="demo_box_title">企业网站</p>
-                                    <span class="demo_box_hover_icon">
-                                    	<a href="http://www.lantunet.com" target="_blank" class="demo_box_link">
-											<img src="image/demo-link.png" alt="" />
-                                        </a>
-                                    </span>
-                                </div>
-								<img src="image/demo_box4.jpg" alt="" class="demo_box_bg"/>
-                            </div>
-                        </li>
-                    </ul>
-				</div> 
-                <div id="demo_info" class="demo_scale">
-                    <p>这是我的部分demo。</p>
-                    <p>更多demo请移步<a href="#" class="md-trigger" data-modal="modal-3">这里</a>。</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- demo end -->
-    <!-- contact -->
-	<div class="section six">
-		<div id="contact">
-			<div id="contact_content">
-				<div class="title">
-					<h1>联系我</h1>
-				</div>
-                <div id="contact_head">
-					<div id="contact_head1">灵感 代码 梦想 未来</div>
-                    <div id="contact_head2">
-                    	<span>inspiration</span>
-                        <span>code</span>
-                        <span>dream</span>
-                        <span>future</span>
-                    </div>
-                </div>
-                <div id="contact_info" class="contact_scale">
-                </div>
-                <div id="contact_way">
-					<div id="contact_message1" class="contact_message contact_scale">留言</div>
-                    <div id="contact_form">
-                        <form action="1.php" method="post">
-                            <ul>
-                                <li><input type="text" name="text" id="contact_name" placeholder="请输入姓名" /></li>
-                                <li><input type="email" name="email" id="contact_email" placeholder="请输入邮箱" /></li>
-                                <li><textarea placeholder="请多多指教"></textarea></li>
-                                <li><a href="#" id="contact_submit">提交</a></li>
-                            </ul>
-                        </form> 
-                    </div>
-                    <div id="contact_message2" class="contact_message">谢谢</div>
-                </div>
-            </div>
-            <footer class="contact_scale">
-				<div class="contact_scale footer"><a href="http://blog.csdn.net/zhcscs" target="_blank">CSDN</a>|<a href="http://weibo.com/zky2013" target="_blank">微博</a>|<a href="https://www.zhihu.com/people/fezky" target="_blank">知乎</a>|<a href="https://segmentfault.com/u/keyu2016" target="_blank">segmentfault</a>|<a href="https://github.com/zhaoky" target="_blank">Github</a></div>
-				<div class="contact_scale footer">All Rights Reserved&nbsp;</div>
-				<div class="contact_scale footer"><a href="http://www.miitbeian.gov.cn/" target="_blank">蜀ICP备15021330号</a>&nbsp;Copyright &copy; 2015 - 2016</div>
-			</footer>
-        </div>
-	</div>
-    <!-- contact end -->
-</div>
-<!-- home page end -->
-<!-- pop layer -->
-<div class="md-modal md-effect-11" id="modal-1">
-	<div class="md-content">
-		<h3>小黄人O(∩_∩)O~</h3>
-		<div>
-			<img src="image/Minions.jpg" alt="" />
-			<button class="md-close">明白了</button>
-		</div>
-	</div>
-</div>
-<div class="md-modal md-effect-13" id="modal-2">
-	<div class="md-content">
-		<h3>学习路线</h3>
-		<div class="modal-learn">
-           	<p>学习用到的书籍</p>
-            <ul>
-            	<li>《SEO实战密码》</li>
-                <li>《html5+css3基础教程（第七版）》</li>
-                <li>《css网站布局实录》</li>
-                <li>《JavaScript DOM编程艺术（第二版）》</li>
-                <li>《锋利的jQuery（第二版）》</li>
-                <li>《JavaScript高级程序设计（第三版）》</li>
-                <li>《PHP和MySQL Web开发（第四版）》</li>
+        <!--小屏幕导航按钮和logo-->
+        <!--导航-->
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#bbs">论坛</a></li>
+                <li><a href="#html5">前端开发</a></li>
+                <li><a href="#course">最新课程</a></li>
+                <li><a href="#app">移动APP</a></li>
+                <li><a href="#contact">联系我们</a></li>
             </ul>
-			<button class="md-close">明白了</button>
-		</div>
-	</div>
-</div>
-<div class="md-modal md-effect-11" id="modal-3">
-    <div class="md-content">
-        <h3>移动APP：兰途校园</h3>
-        <div class="modal-example">
-            <p>已上线学校</p>
-            <ul>
-                <li><span><a href="https://app.bjtu.edu.cn/getapp/" target="_blank">北京交通大学</a></span></li>
-                <li><span><a href="https://bhna.buaa.edu.cn/bhna/" target="_blank">北京航空航天大学</a></span></li>
-                <li><span><a href="https://app.nacta.edu.cn/" target="_blank">中国戏曲学院</a></span></li>
-                <li><span><a href="https://download.haust.edu.cn/haust/getApp/" target="_blank">河南科技大学</a></span></li>
-                <li><span><a href="https://www.app8848.com/bfsu/getApp/" target="_blank">北京外国语大学</a></span></li>
-            </ul>
-            <p>更多在建...</p>
-            <button class="md-close">明白了</button>
+        </div>
+        <!--导航-->
+
+    </div>
+</nav>
+<!--导航-->
+
+<!--home-->
+<section id="home">
+    <div class="lvjing">
+        <div class="container">
+            <div class="row wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <h1>bootstrap实战课程等你来战！</h1>
+                    <p>
+                        本套课程适用于：1.WEB开发人员；2.网站维护人员、管理人员<br/>
+                        培训技能的目标：使用bootstrap框架快速构建响应式网页，颠覆传统WEB前端！
+                    </p>
+                    <img src="images/php.jpg" class="img-responsive" alt="php"/>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
         </div>
     </div>
-</div>
-<div class="md-overlay"></div>
+</section>
+<!--home-->
 
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+<!--bbs-->
+<section id="bbs">
+    <div class="container">
+        <div class="row wow fadeInUp" data-wow-duration="0.5s">
+            <div class="col-md-4">
+                <a href="http://www.maiziedu.com" target="_blank">
+                    <img src="images/a.png" class="img-responsive" alt=""/>
+                    <h3>Android开发</h3>
+                    <p>Android开发技术交流、问题求助、实战案例分享</p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="http://www.maiziedu.com" target="_blank">
+                    <img src="images/i.png" class="img-responsive" alt=""/>
+                    <h3>IOS开发</h3>
+                    <p>iOS开发技术交流，海量iOS实战干货分享</p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="http://www.maiziedu.com" target="_blank">
+                    <img src="images/b.png" class="img-responsive" alt=""/>
+                    <h3>嵌入式底层开发</h3>
+                    <p>底层嵌入式开发、实战案例等技术交流讨论</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--bbs-->
+
+<!--html5-->
+<section id="html5">
+    <div class="container">
+        <div class="col-md-6 wow fadeInLeft">
+            <h2>HTML5前端开发</h2>
+            <p>一线资深前端开发工程师倾情打造！助你完成普通程序员到优秀工程师的华丽升级！</p>
+            <p><span class="glyphicon glyphicon-grain mai-icon"></span>使用HTML5与CSS3技术轻松实现设备自适应展示。</p>
+            <p><span class="glyphicon glyphicon-grain mai-icon"></span>清晰明了的语义代码结构，更高的可读性、更利于页面维护的。</p>
+        </div>
+        <div class="col-md-6 wow fadeInRight">
+            <img src="images/html5.jpg" class="img-responsive" alt=""/>
+        </div>
+    </div>
+</section>
+<!--html5-->
+
+<!--bootstrap-->
+<section id="bootstrap">
+    <div class="container wow fadeInUp">
+        <div class="col-md-6">
+            <img src="images/Bootstrap.jpg" class="img-responsive" alt=""/>
+        </div>
+        <div class="col-md-6">
+            <h2>bootstrap实战视频教程</h2>
+            <p>Bootstrap 是最受欢迎的 HTML、CSS 和 JS 框架，用于开发响应式布局、移动设备优先的 WEB 项目。</p>
+            <p><span class="glyphicon glyphicon-grain mai-icon"></span>你的网站和应用能在 Bootstrap 的帮助下通过同一份代码快速、有效适配手机、平板、PC 设备。</p>
+            <p><span class="glyphicon glyphicon-grain mai-icon"></span>Bootstrap 提供了全面、美观的文档。你能在这里找到关于 HTML 元素、HTML 和 CSS 组件、jQuery 插件方面的所有详细文档。</p>
+        </div>
+    </div>
+</section>
+<!--bootstrap-->
+
+<!--course-->
+<section id="course">
+    <div class="container">
+        <div class="row wow fadeIn" data-wow-delay="0.6s">
+            <div class="col-md-12">
+                <h2>最新课程</h2>
+            </div>
+            <div class="col-md-3">
+                <div class="course">
+                    <img src="images/swift.jpg" class="img-responsive" alt=""/>
+                    <a href="http://www.maiziedu.com" class="btn btn-primary" target="_blank" role="button">
+                        加入学习
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="course">
+                    <img src="images/swift.jpg" class="img-responsive" alt=""/>
+                    <a href="http://www.maiziedu.com" class="btn btn-primary" target="_blank" role="button">
+                        加入学习
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="course">
+                    <img src="images/swift.jpg" class="img-responsive" alt=""/>
+                    <a href="http://www.maiziedu.com" class="btn btn-primary" target="_blank" role="button">
+                        加入学习
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="course">
+                    <img src="images/swift.jpg" class="img-responsive" alt=""/>
+                    <a href="http://www.maiziedu.com" class="btn btn-primary" target="_blank" role="button">
+                        加入学习
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="course">
+                    <img src="images/swift.jpg" class="img-responsive" alt=""/>
+                    <a href="http://www.maiziedu.com" class="btn btn-primary" target="_blank" role="button">
+                        加入学习
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="course">
+                    <img src="images/swift.jpg" class="img-responsive" alt=""/>
+                    <a href="http://www.maiziedu.com" class="btn btn-primary" target="_blank" role="button">
+                        加入学习
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="course">
+                    <img src="images/swift.jpg" class="img-responsive" alt=""/>
+                    <a href="http://www.maiziedu.com" class="btn btn-primary" target="_blank" role="button">
+                        加入学习
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="course">
+                    <img src="images/swift.jpg" class="img-responsive" alt=""/>
+                    <a href="http://www.maiziedu.com" class="btn btn-primary" target="_blank" role="button">
+                        加入学习
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--course-->
+
+<!--app-->
+<section id="app">
+    <div class="container">
+        <div class="row  wow fadeInUp">
+            <div class="col-md-6">
+                <h2>麦子学院移动APP下载</h2>
+                <p>
+                    全新UI交互，与新网站数据同步，更加丰富的课程，开启精彩无限，语音搜索课程，喊出你想要的课程，一件收藏，方便自己重复学习，离线下载课程，在哪儿都能开！
+                </p>
+                <button class="btn btn-primary">
+                    <span class="glyphicon glyphicon-download-alt"></span>
+                    iPhone版
+                </button>
+                <button class="btn btn-primary">
+                    <span class="glyphicon glyphicon-download-alt"></span>
+                    Android版
+                </button>
+            </div>
+            <div class="col-md-6">
+                <img src="images/app-banner.jpg" class="img-responsive" alt=""/>
+            </div>
+        </div>
+    </div>
+</section>
+<!--app-->
+
+<!--contact-->
+<section id="contact">
+    <div class="lvjing">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6  wow fadeInLeft">
+                    <h2>
+                        <span class="glyphicon glyphicon-send"></span>
+                        &nbsp;
+                        联系小麦
+                    </h2>
+                    <p>
+                        麦子学院是成都麦子信息技术有限公司旗下一个IT在线教育平台，目前已有30万注册用户，10万以上APP下载量，5000小时视频内容。 我们从不说空话，专注于IT在线教育，脱离传统教育的束缚，让你走哪学哪，想学就学。逗比的老师，贴心的助教，在这儿你能感受到来自五 湖四海伙伴们热情和踏实的学习态度！
+                    </p>
+                    <address>
+                        <p>
+                            <span class="glyphicon glyphicon-home"></span>
+                            &nbsp;
+                            地址:成都市高新区天府软件园D5-11
+                        </p>
+                        <p>
+                            <span class="glyphicon glyphicon-phone-alt"></span>
+                            &nbsp;
+                            联系电话：028-86567913
+                        </p>
+                        <p>
+                            <span class="glyphicon glyphicon-envelope"></span>
+                            &nbsp;
+                            邮箱:hr@maiziedu.com
+                        </p>
+                    </address>
+                </div>
+                <div class="col-md-6  wow fadeInRight">
+                    <form action="#" method="post">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="您的姓名"/>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" placeholder="您的邮箱"/>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" placeholder="标题"/>
+                        </div>
+                        <div class="col-md-12">
+                            <textarea class="form-control" placeholder="留言内容" rows="4"></textarea>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="submit" class="form-control" value="提交"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--contact-->
+
+<!--footer-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Copyright&nbsp;©&nbsp;2012-2015&nbsp;&nbsp;www.maiziedu.com&nbsp;&nbsp;蜀ICP备13014270号-4
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer-->
+
+
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.singlePageNav.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    $(function(){
+        /*导航跳转效果插件*/
+        $('.nav').singlePageNav({
+            offset:70
+        });
+        /*小屏幕导航点击关闭菜单*/
+        $('.navbar-collapse a').click(function(){
+            $('.navbar-collapse').collapse('hide');
+        });
+        new WOW().init();
+    })
+</script>
+</body>
 </html>
